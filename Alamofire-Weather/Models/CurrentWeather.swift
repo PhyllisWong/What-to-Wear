@@ -9,6 +9,7 @@
 // JSON: javaScript notation
 import Foundation
 
+
 class CurrentWeather {
     
     let temperature : Int?

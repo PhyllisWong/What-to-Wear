@@ -14,6 +14,7 @@
 		99643B5DAA2CB6B4C2100704 /* Pods_Alamofire_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA4DBEA735548FD3FC4A83D /* Pods_Alamofire_Weather.framework */; };
 		B93882661FDF89D7009686DF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93882651FDF89D7009686DF /* CurrentWeather.swift */; };
 		B96A9B831FDF947E00F41E2E /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A9B821FDF947E00F41E2E /* ForecastService.swift */; };
+		B9848D701FDFA4E800B65C28 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9848D6F1FDFA4E800B65C28 /* CurrentWeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8CA4DBEA735548FD3FC4A83D /* Pods_Alamofire_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93882651FDF89D7009686DF /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		B96A9B821FDF947E00F41E2E /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		B9848D6F1FDFA4E800B65C28 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
 		E4CB227C0C5B5914FC629DDD /* Pods-Alamofire-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alamofire-Weather/Pods-Alamofire-Weather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,14 +83,39 @@
 			isa = PBXGroup;
 			children = (
 				52CD91871EEE2E8300F79AAD /* AppDelegate.swift */,
-				52CD918B1EEE2E8300F79AAD /* Main.storyboard */,
-				B93882651FDF89D7009686DF /* CurrentWeather.swift */,
-				B96A9B821FDF947E00F41E2E /* ForecastService.swift */,
+				B9848D721FDFA51000B65C28 /* Controllers */,
+				B9848D711FDFA50800B65C28 /* Views */,
+				B9848D731FDFA51B00B65C28 /* Models */,
 				52CD918E1EEE2E8300F79AAD /* Assets.xcassets */,
 				52CD91901EEE2E8300F79AAD /* LaunchScreen.storyboard */,
 				52CD91931EEE2E8300F79AAD /* Info.plist */,
 			);
 			path = "Alamofire-Weather";
+			sourceTree = "<group>";
+		};
+		B9848D711FDFA50800B65C28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52CD918B1EEE2E8300F79AAD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9848D721FDFA51000B65C28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9848D6F1FDFA4E800B65C28 /* CurrentWeatherViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9848D731FDFA51B00B65C28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B93882651FDF89D7009686DF /* CurrentWeather.swift */,
+				B96A9B821FDF947E00F41E2E /* ForecastService.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Duc Tran";
 				TargetAttributes = {
 					52CD91831EEE2E8300F79AAD = {
@@ -224,6 +251,7 @@
 				B93882661FDF89D7009686DF /* CurrentWeather.swift in Sources */,
 				B96A9B831FDF947E00F41E2E /* ForecastService.swift in Sources */,
 				52CD91881EEE2E8300F79AAD /* AppDelegate.swift in Sources */,
+				B9848D701FDFA4E800B65C28 /* CurrentWeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +287,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -267,7 +297,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -309,7 +343,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -317,7 +353,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
